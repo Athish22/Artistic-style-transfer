@@ -39,18 +39,7 @@ These losses are optimized to iteratively update the generated image.
 
 # Architecture Flow
 
-[Input Image (224x224x3)]
-       ↓
-    [VGG19 Model]
-       ↓
-  ------------------------------------
- | Content Features from block5_conv2 |
- | Style Features from style layers   |
-  ------------------------------------
-       ↓
-  [Loss Computation]
-       ↓
-[Optimization (Style Transfer)]
+[Input Image (224x224x3)] -> [VGG19 Model] -> [Content Features from block5_cov2 and Style Features from style layers] -> [Loss Computation] -> [Optimization (Style Transfer)]
 
 # Installation and Usage
 Clone the Repository
